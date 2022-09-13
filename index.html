@@ -5,7 +5,7 @@
 
     <head>
  <meta charset="UTF-8">
-<link rel="stylesheet" href="website.css">
+<link rel="stylesheet" href="calculator.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 Matthew Sanchez
     <head>
@@ -17,39 +17,50 @@ Matthew Sanchez
 Matthew Sanchez's web page
 </h1>
 <p>
-This is the first web page I have ever made.  Please see a picture below.
+This is a replica of the calculator app in windows.
 </p>
-    <h2> I've been writing code for aobut one month now.  I'm learning Javascript, Html, and CSS.  My goal is to become a software developer.  Right now I am a CPA.
-	    </h2>
+<div id="calculator-container">
+	<div class ="row display">
+		<span id="result">0</span>
+	</div>
+    <div class ="row">
+        <div id="reset" class="btn large misc">AC</div>
+        <div  class="btn misc">+/-</div>
+        <div id="divide" class="btn operation">/</div>
+    </div>
+    <div class ="row">
+        <div class="btn">7</div>
+        <div class="btn">8</div>
+        <div class="btn">9</div>
+        <div id="multiply" class="btn operation">x</div>
+    </div>
+    <div class ="row">
+        <div class="btn">4</div>
+        <div class="btn">5</div>
+        <div class="btn">6</div>
+        <div id="minus" class="btn operation">-</div>
+    </div>
+    <div class ="row">
+        <div class="btn">1</div>
+        <div class="btn">2</div>
+        <div class="btn">3</div>
+        <div id="add" class="btn operation">+</div>
+    </div>
+    <div class ="row">
+        <div class="btn">0</div>
+        <div class="btn misc">.</div>
+        <div id="equals" class="btn">=</div>
+    </div>
+</div>
 
-
- <img id= "Matt" alt="Smiley face" src="https://github.com/msanchez0125/msanchez0125.github.io/blob/main/download.jpg?raw=true">
-<table>
-	<tr>
-		<td>%</td>
-		<td>CE</td>
-		<td>C</td>
-		<td><=X</td>
-	</tr>
-	<tr>
-		<td>1/x</td>
-		<td>x^2</td>
-		<td>x<-2</td>
-		<td><=/</td>
-	</tr>
+<div style="padding:25px;">
+    <div> curNumber1: <span id="curNumber1"></span></div>
+    <div> curNumber2: <span id="curNumber2"></span></div>
+    <div> curOperation: <span id="curOperation"></span></div>
+</div>
 	
-	    </table>
-	    
- <script>
-        // Identifying our image
-        const smiley = document.querySelector("#Matt");
-
-        // Adding reaction when image is clicked
-        smiley.addEventListener("click", () => {
-           alert(`Smiley says "Welcome!"`);
-        });
-      </script>
-
+<script src="./main.js"></script>
+	
     </body>
 
 
