@@ -1,14 +1,56 @@
-p {
-
-
-    color: red;
-
-
-}
-
 h1 { font-size: 36px;}
 
-#Matt {
-  width: 300px;
-  height: auto;
+html, body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
 }
+
+#calculator-container {
+display: flex;
+background-color: gray;
+width: 300px;
+color:white;
+flex-direction: column;
+
+} 
+
+#calculator-container .row {
+    display:flex;
+    height: 100px;
+}
+
+#calculator-container .row.display {
+    justify-content: flex-end;
+    font-size: 3em;
+    line-height: 2.9;
+    padding-right: 10px;
+    border: 1px solid black;
+}
+
+#calculator-container .row .btn {
+padding: 10px;
+width: 100px;
+line-height: 3;
+text-align: center;
+font-size: 1.7em;
+border: 1px solid black;
+}
+
+#calculator-container .row .btn.large{
+flex-grow: 1;
+    }
+
+#calculator-container .row .btn.operation {
+    background-color: coral;
+}
+
+#calculator-container .row .btn.misc {
+    background-color: rgb(41, 41, 41);
+}
+
+#calculator-container .row:last-child .btn:last-child {
+background-color: crimson;
+}
+
